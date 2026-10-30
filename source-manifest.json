@@ -1,0 +1,25 @@
+{
+  "build_date": "2026-10-30",
+  "original_code": "telegram-ai-team-v0.1.0 from current conversation",
+  "copied_unmodified": [
+    "app/",
+    "tests/",
+    "requirements.txt",
+    ".env.example",
+    "Dockerfile",
+    "docker-compose.yml"
+  ],
+  "skills": [
+    "telegram-ai-team",
+    "osint-competitive-research",
+    "token-economy"
+  ],
+  "status": "handoff; no deployment; 5 baseline tests passed locally",
+  "notes": [
+    "Original .gitignore entries preserved; additional local report/log exclusions appended.",
+    "All source app Python files unmodified.",
+    "Updated only instruction/handoff files, phases 00/03/06 and added token economy skill; source app/ and tests/ unchanged.",
+    "Official Caveman referenced for optional local installation; neither proxy nor cloud routing bundled or activated."
+  ],
+  "handoff_version": "1.1-token-efficient"
+}

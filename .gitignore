@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+data/
+.pytest_cache/
+
+# Codex handoff local-only files
+reports/*.local.md
+*.log
+.venv/

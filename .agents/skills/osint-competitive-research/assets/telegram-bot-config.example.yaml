@@ -1,0 +1,36 @@
+# ОБРАЗЕЦ, НЕ ГОТОВ К РАЗВЁРТЫВАНИЮ. Токены/ключи хранить в секретах n8n/ENV.
+project: telegram-ai-community-assistant
+bot:
+  public_name: "AI-помощник SYMMETLINE"
+  disclose_ai: true
+  default_language: ru
+  allow_private_chat: true
+  guest_mode_enabled: false  # активировать и тестировать только после MVP
+  allowed_group_chat_ids: [] # только явно согласованные с администраторами
+  group_triggers: [mention, reply_to_bot, command]
+  group_privacy_mode: true
+  unsolicited_messages: false
+  marketing_links: user_requested_only
+  rate_limit_per_chat_seconds: 3
+  dedupe_updates: true
+  global_kill_switch: false
+consent:
+  required_before_external_llm: true
+  delete_command: /delete
+  privacy_command: /privacy
+  handoff_command: /human
+  stop_command: /stop
+knowledge:
+  allowed_sources: [owner_provided_faq, verified_product_catalog, approved_policies]
+  allow_unverified_prices: false
+  allow_unverified_stock: false
+  allow_telegram_scraping: false
+integration:
+  mode: n8n_or_backend
+  backend: not_configured
+  llm_provider: not_configured
+  crm: not_configured
+monitoring:
+  save_raw_group_messages: false
+  aggregate_metrics_only: true
+  notify_admin_on_errors: true
